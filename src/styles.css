@@ -1,0 +1,16 @@
+
+.speaker-button {
+    border: none;
+    padding: 0 15px;
+    font-size: 23px;
+    line-height: 58px;
+    margin: 16px 0;
+    height: 53px;
+    border-radius: 4px;
+    border-bottom: 3px solid #3d9cb3;
+    background: #4aafc8;
+}
+
+.speaker-button:disabled {
+    opacity: 0.5;
+}
