@@ -1,4 +1,4 @@
-const excersiceSelector = '#huidigeredactiesom'
+const excersiceSelector = '#huidigeredactiesom';
 
 // Observe the excersice 
 const excersice = document.querySelector(excersiceSelector);
@@ -43,7 +43,7 @@ const speakExcersie = async (e) => {
     (await spoken.voices())
         .filter(voice => voice.name.indexOf('Xander') == 0)
         .forEach(voice =>
-            spoken.say(excersice, voice.name)
+            spoken.say(excersice, voice.name, 0.7)
         )
 }
 

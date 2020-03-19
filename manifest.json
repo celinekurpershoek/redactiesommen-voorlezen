@@ -17,7 +17,9 @@
         {
             "matches": [
                 "http://www.redactiesommen.nl/*.html*",
-                "https://www.redactiesommen.nl/*.html*"
+                "https://www.redactiesommen.nl/*.html*",
+                "https://www.redactiesommen.nl/*.php*",
+                "http://www.redactiesommen.nl/*.php*"
             ],
             "css": [
                 "src/styles.css"
