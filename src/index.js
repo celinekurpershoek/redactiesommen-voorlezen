@@ -41,7 +41,7 @@ const speakExcersie = async (e) => {
     speakerButton.setAttribute('disabled', true);
 
     (await spoken.voices())
-        .filter(voice => voice.name.indexOf('Xander') == 0)
+        .filter(voice => voice.name.indexOf('Google Nederlands') == 0)
         .forEach(voice =>
             spoken.say(excersice, voice.name, 0.7)
         )
