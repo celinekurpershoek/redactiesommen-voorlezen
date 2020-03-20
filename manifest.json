@@ -29,9 +29,9 @@
         }
     ],
     "icons": {
-        "32": "icon-speaker32px.png",
-        "48": "icon-speaker48px.png",
-        "128": "icon-speaker128px.png"
+        "32": "icon-speaker32px.jpg",
+        "48": "icon-speaker48px.jpg",
+        "128": "icon-speaker128px.jpg"
     },
     "manifest_version": 2
 }
