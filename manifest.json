@@ -1,6 +1,6 @@
 {
     "name": "Redactiesommen voorlezen",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "Leest de sommen op redactiesommen.nl hardop.",
     "permissions": [
         "declarativeContent"
@@ -29,9 +29,9 @@
         }
     ],
     "icons": {
-        "32": "icon-speaker32px.jpg",
-        "48": "icon-speaker48px.jpg",
-        "128": "icon-speaker128px.jpg"
+        "32": "icon-speaker32px.png",
+        "48": "icon-speaker48px.png",
+        "128": "icon-speaker128px.png"
     },
     "manifest_version": 2
 }
