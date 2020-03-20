@@ -24,7 +24,6 @@ function addSpeakButton() {
     const excersice = document.querySelector(excersiceSelector)
     const speakerButton = document.createElement('button');
     speakerButton.setAttribute('class', 'speaker-button');
-    speakerButton.innerHTML = '🔈';
     excersice.insertAdjacentElement('afterend', speakerButton)
     speakerButton.addEventListener('click', speakExcersie)
 }
@@ -34,16 +33,13 @@ function addSpeakButton() {
 const speakExcersie = async (e) => {
     const speakerButton = e.target;
     const excersice = document.querySelector(excersiceSelector).textContent;
-    const timeout = calculateTimeout(excersice.length);
-    setTimeout(() => {
-        speakerButton.removeAttribute('disabled', true)
-    }, timeout)
-    speakerButton.setAttribute('disabled', true);
-
+    speakerButton.setAttribute('data-speaking', true);
     (await spoken.voices())
         .filter(voice => voice.name.indexOf('Google Nederlands') == 0)
         .forEach(voice =>
-            spoken.say(excersice, voice.name, 0.7)
+            spoken.say(excersice, voice.name, 0.7).then(() => {
+                speakerButton.removeAttribute('data-speaking', true)
+            })
         )
 }
 
