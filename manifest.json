@@ -1,11 +1,9 @@
 {
     "name": "Redactiesommen voorlezen",
-    "version": "1.0",
+    "version": "1.0.2",
     "description": "Leest de sommen op redactiesommen.nl hardop.",
     "permissions": [
-        "activeTab",
-        "declarativeContent",
-        "storage"
+        "declarativeContent"
     ],
     "background": {
         "scripts": [
@@ -30,19 +28,10 @@
             ]
         }
     ],
-    "page_action": {
-        "default_icon": {
-            "16": "images/icon-speaker16px.png",
-            "32": "images/icon-speaker32px.png",
-            "48": "images/icon-speaker48px.png",
-            "128": "images/icon-speaker128px.png"
-        }
-    },
     "icons": {
-        "16": "images/icon-speaker16px.png",
-        "32": "images/icon-speaker32px.png",
-        "48": "images/icon-speaker48px.png",
-        "128": "images/icon-speaker128px.png"
+        "32": "icon-speaker32px.png",
+        "48": "icon-speaker48px.png",
+        "128": "icon-speaker128px.png"
     },
     "manifest_version": 2
 }
