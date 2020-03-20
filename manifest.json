@@ -1,6 +1,6 @@
 {
     "name": "Redactiesommen voorlezen",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "Leest de sommen op redactiesommen.nl hardop.",
     "permissions": [
         "declarativeContent"
