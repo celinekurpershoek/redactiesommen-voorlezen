@@ -31,6 +31,7 @@ function addSpeakButton() {
 
 // Speak with spoken library on Click
 const speakExcersie = async (e) => {
+    e.preventDefault();
     const speakerButton = e.target;
     const excersice = document.querySelector(excersiceSelector).textContent;
     speakerButton.setAttribute('data-speaking', true);
@@ -43,5 +44,11 @@ const speakExcersie = async (e) => {
         )
 }
 
+// Cancel spoken on tab change or close tab
+window.addEventListener('beforeunload', () => {
+    spoken.cancel();
+})
 
-
+window.addEventListener('blur', () => {
+    spoken.cancel();
+})
